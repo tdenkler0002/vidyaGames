@@ -22,7 +22,7 @@ namespace SweeneyVidyaGames.Api.Models
 
         public VideoGameDTO()
         {
-            this.DateAdded = DateTime.UtcNow;
+            DateAdded = DateTime.UtcNow;
         }
     }
 }

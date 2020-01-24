@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Caching.Memory;
 using SweeneyVidyaGames.Api.Domain.Repositories;
 using SweeneyVidyaGames.Api.Domain.Services.Communication;
+using SweeneyVidyaGames.Api.Infrastructure;
 using SweeneyVidyaGames.Api.Interfaces;
 using SweeneyVidyaGames.Api.Models;
 
@@ -10,26 +12,36 @@ namespace SweeneyVidyaGames.Api.Core.Services
 {
     public class VideoGameService : IVideoGameService
     {
-        private readonly IVideoGameRepository videoGameRepository;
-        private readonly IUnitOfWork unitOfWork;
+        private readonly IVideoGameRepository _videoGameRepository;
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IMemoryCache _cache;
 
-        public VideoGameService(IVideoGameRepository videoGameRepository, IUnitOfWork unitOfWork)
+        public VideoGameService(IVideoGameRepository videoGameRepository, IUnitOfWork unitOfWork, IMemoryCache cache)
         {
-            this.videoGameRepository = videoGameRepository;
-            this.unitOfWork = unitOfWork;
+            _videoGameRepository = videoGameRepository;
+            _unitOfWork = unitOfWork;
+            _cache = cache;
         }
 
         public async Task<IEnumerable<VideoGameDTO>> ListAsync()
         {
-            return await videoGameRepository.ListAsync();
+            // Get list of video games from cache if exits
+            // No data in cache - return list from repo
+            var videoGames = await _cache.GetOrCreateAsync(CacheKeys.VideoGameList, (entry) =>
+            {
+                entry.AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(1);
+                return _videoGameRepository.ListAsync();
+            });
+
+            return videoGames;
         }
 
         public async Task<VideoGameResponse> SaveAsync(VideoGameDTO videoGame)
         {
             try
             {
-                await videoGameRepository.AddAsync(videoGame);
-                await unitOfWork.CompleteAsync();
+                await _videoGameRepository.AddAsync(videoGame);
+                await _unitOfWork.CompleteAsync();
 
                 return new VideoGameResponse(videoGame);
             }
@@ -41,7 +53,7 @@ namespace SweeneyVidyaGames.Api.Core.Services
 
         public async Task<VideoGameResponse> UpdateAsync(int id, VideoGameDTO videoGame)
         {
-            var exisitingVideoGame = await videoGameRepository.FindByIdAsync(id);
+            var exisitingVideoGame = await _videoGameRepository.FindByIdAsync(id);
 
             if (exisitingVideoGame == null)
                 return new VideoGameResponse("Video Game not found.");
@@ -50,8 +62,8 @@ namespace SweeneyVidyaGames.Api.Core.Services
 
             try
             {
-                videoGameRepository.Update(exisitingVideoGame);
-                await unitOfWork.CompleteAsync();
+                _videoGameRepository.Update(exisitingVideoGame);
+                await _unitOfWork.CompleteAsync();
 
                 return new VideoGameResponse(exisitingVideoGame);
             }
@@ -63,15 +75,15 @@ namespace SweeneyVidyaGames.Api.Core.Services
 
         public async Task<VideoGameResponse> DeleteAsync(int id)
         {
-            var exisitingVideoGame = await videoGameRepository.FindByIdAsync(id);
+            var exisitingVideoGame = await _videoGameRepository.FindByIdAsync(id);
 
             if (exisitingVideoGame == null)
                 return new VideoGameResponse("Video game not found.");
 
             try
             {
-                videoGameRepository.Remove(exisitingVideoGame);
-                await unitOfWork.CompleteAsync();
+                _videoGameRepository.Remove(exisitingVideoGame);
+                await _unitOfWork.CompleteAsync();
 
                 return new VideoGameResponse(exisitingVideoGame);
             }
@@ -79,6 +91,16 @@ namespace SweeneyVidyaGames.Api.Core.Services
             {
                 return new VideoGameResponse($"An error occurred when deleting the video game: {ex.Message}");
             }
+        }
+
+        private string GetCacheKeyForVideoGameId(int? videoGameId)
+        {
+            string key = CacheKeys.VideoGameList.ToString();
+
+            if (videoGameId.HasValue && videoGameId > 0)
+                key = string.Concat(key, videoGameId.Value);
+
+            return key;
         }
 
     }

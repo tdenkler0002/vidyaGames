@@ -14,27 +14,27 @@ namespace SweeneyVidyaGames.Api.Persistence.Repositories
 
         public async Task<IEnumerable<VideoGameDTO>> ListAsync()
         {
-            return await context.VideoGames.ToListAsync();
+            return await _context.VideoGames.ToListAsync();
         }
 
         public async Task AddAsync(VideoGameDTO videoGame)
         {
-            await context.VideoGames.AddAsync(videoGame);
+            await _context.VideoGames.AddAsync(videoGame);
         }
 
         public async Task<VideoGameDTO> FindByIdAsync(int id)
         {
-            return await context.VideoGames.FindAsync(id);
+            return await _context.VideoGames.FindAsync(id);
         }
 
         public void Update(VideoGameDTO videoGame)
         {
-            context.VideoGames.Update(videoGame);
+            _context.VideoGames.Update(videoGame);
         }
 
         public void Remove(VideoGameDTO videoGame)
         {
-            context.VideoGames.Remove(videoGame);
+            _context.VideoGames.Remove(videoGame);
         }
     }
 }

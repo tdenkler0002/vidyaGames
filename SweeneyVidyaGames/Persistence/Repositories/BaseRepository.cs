@@ -5,11 +5,11 @@ namespace SweeneyVidyaGames.Api.Persistence.Repositories
 {
     public abstract class BaseRepository
     {
-        protected readonly AppDbContext context;
+        protected readonly AppDbContext _context;
 
         public BaseRepository(AppDbContext context)
         {
-            this.context = context;
+            _context = context;
         }
     }
 }

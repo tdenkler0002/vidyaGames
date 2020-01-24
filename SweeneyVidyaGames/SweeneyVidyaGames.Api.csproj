@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Domain\" />
     <Folder Include="Domain\Services\" />
     <Folder Include="Domain\Repositories\" />
@@ -26,6 +25,9 @@
     <Folder Include="Mapping\" />
     <Folder Include="Extensions\" />
     <Folder Include="Domain\Services\Communication\" />
+    <Folder Include="Domain\Models\" />
+    <Folder Include="Controllers\Config\" />
+    <Folder Include="Infrastructure\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Domain\VideoGame.cs" />
@@ -35,5 +37,8 @@
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="AutoMapper" Version="9.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.1" />
   </ItemGroup>
 </Project>

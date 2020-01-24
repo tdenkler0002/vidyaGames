@@ -36,16 +36,21 @@ namespace SweeneyVidyaGames
                 options.UseInMemoryDatabase("videogames-api-in-memory");
             });
 
+            services.AddMemoryCache();
+
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Vidya Games", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo {
+                    Title = "Vidya Games",
+                    Version = "v1",
+                    Contact = new OpenApiContact { Name = "Tiffany Sweeney", Email = "tiffany.denkler@yahoo.com"}
+                });
             });
 
             services.AddScoped<IVideoGameRepository, VideoGameRepository>();
             services.AddScoped<IVideoGameService, VideoGameService>();
-            services.AddAutoMapper(typeof(Startup));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-
+            services.AddAutoMapper(typeof(Startup));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

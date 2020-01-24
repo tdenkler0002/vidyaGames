@@ -7,16 +7,16 @@ namespace SweeneyVidyaGames.Api.Persistence.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly AppDbContext context;
+        private readonly AppDbContext _context;
 
         public UnitOfWork(AppDbContext context)
         {
-            this.context = context;
+            _context = context;
         }
 
         public async Task CompleteAsync()
         {
-            await this.context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
         }
     }
 }
