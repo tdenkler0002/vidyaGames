@@ -1,0 +1,8 @@
+Process
+
+Add new video game from collection(FE) (title, platform) >> BE API (post title, platform, bought)
+API (get that info and call out to other website for info before adding to DB)
+
+Match up
+
+

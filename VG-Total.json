@@ -1,0 +1,914 @@
+https://api.rawg.io/api/games?page_size=5&search=gta%20v
+
+{
+    "count": 1114,
+    "next": "https://api.rawg.io/api/games?page=2&page_size=5&search=gta+v",
+    "previous": null,
+    "results": [
+        {
+            "slug": "grand-theft-auto-v",
+            "name": "Grand Theft Auto V",
+            "promo": "",
+            "playtime": 69,
+            "platforms": [
+                {
+                    "platform": {
+                        "id": 4,
+                        "name": "PC",
+                        "slug": "pc"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 1,
+                        "name": "Xbox One",
+                        "slug": "xbox-one"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 18,
+                        "name": "PlayStation 4",
+                        "slug": "playstation4"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 14,
+                        "name": "Xbox 360",
+                        "slug": "xbox360"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 16,
+                        "name": "PlayStation 3",
+                        "slug": "playstation3"
+                    }
+                }
+            ],
+            "stores": [
+                {
+                    "store": {
+                        "id": 1,
+                        "name": "Steam",
+                        "slug": "steam"
+                    }
+                },
+                {
+                    "store": {
+                        "id": 3,
+                        "name": "PlayStation Store",
+                        "slug": "playstation-store"
+                    }
+                },
+                {
+                    "store": {
+                        "id": 2,
+                        "name": "Xbox Store",
+                        "slug": "xbox-store"
+                    }
+                },
+                {
+                    "store": {
+                        "id": 7,
+                        "name": "Xbox 360 Store",
+                        "slug": "xbox360"
+                    }
+                }
+            ],
+            "released": "2013-09-17",
+            "tba": false,
+            "background_image": "https://media.rawg.io/media/games/978/9780426199d92d086e7c85ed8993cede.jpg",
+            "rating": 4.46,
+            "rating_top": 5,
+            "ratings": [
+                {
+                    "id": 5,
+                    "title": "exceptional",
+                    "count": 1384,
+                    "percent": 57.4
+                },
+                {
+                    "id": 4,
+                    "title": "recommended",
+                    "count": 841,
+                    "percent": 34.88
+                },
+                {
+                    "id": 3,
+                    "title": "meh",
+                    "count": 147,
+                    "percent": 6.1
+                },
+                {
+                    "id": 1,
+                    "title": "skip",
+                    "count": 39,
+                    "percent": 1.62
+                }
+            ],
+            "ratings_count": 2389,
+            "reviews_text_count": 13,
+            "added": 8732,
+            "added_by_status": {
+                "yet": 147,
+                "owned": 5727,
+                "beaten": 1986,
+                "toplay": 251,
+                "dropped": 347,
+                "playing": 274
+            },
+            "metacritic": 96,
+            "charts": {
+                "year": {
+                    "year": 2013,
+                    "change": "equal",
+                    "position": 1
+                }
+            },
+            "comments_count": 0,
+            "comments_parent_count": 0,
+            "suggestions_count": 383,
+            "id": 3498,
+            "score": "46.04265",
+            "clip": {
+                "clip": "https://media.rawg.io/media/stories-640/5b0/5b0cfff8c606c5e4db4f74f108c4413b.mp4",
+                "clips": {
+                    "320": "https://media.rawg.io/media/stories-320/91d/91d6b5963064a5f686f635c302095b55.mp4",
+                    "640": "https://media.rawg.io/media/stories-640/5b0/5b0cfff8c606c5e4db4f74f108c4413b.mp4",
+                    "full": "https://media.rawg.io/media/stories/f64/f64ce0b857918b0c202f2a5d3217848e.mp4"
+                },
+                "preview": "https://media.rawg.io/media/stories-previews/f65/f6593df6c8df32c7f4763f9cb112a514.jpg"
+            },
+            "user_game": null,
+            "reviews_count": 2411,
+            "saturated_color": "0f0f0f",
+            "dominant_color": "0f0f0f",
+            "short_screenshots": [
+                {
+                    "id": -1,
+                    "image": "https://media.rawg.io/media/games/978/9780426199d92d086e7c85ed8993cede.jpg"
+                },
+                {
+                    "id": 1827219,
+                    "image": "https://media.rawg.io/media/screenshots/1b4/1b4eefb4cc2a77d4d35bb4a6926f3189.jpg"
+                },
+                {
+                    "id": 1827221,
+                    "image": "https://media.rawg.io/media/screenshots/a7c/a7c43871a54bed6573a6a429451564ef.jpg"
+                },
+                {
+                    "id": 1827222,
+                    "image": "https://media.rawg.io/media/screenshots/cf4/cf4367daf6a1e33684bf19adb02d16d6.jpg"
+                },
+                {
+                    "id": 1827223,
+                    "image": "https://media.rawg.io/media/screenshots/f95/f9518b1d99210c0cae21fc09e95b4e31.jpg"
+                },
+                {
+                    "id": 1827224,
+                    "image": "https://media.rawg.io/media/screenshots/2dc/2dc7ea94641f7329d177f228564b968a.jpg"
+                },
+                {
+                    "id": 1827225,
+                    "image": "https://media.rawg.io/media/screenshots/a5c/a5c95ea539c87d5f538763e16e18fb99.jpg"
+                }
+            ],
+            "parent_platforms": [
+                {
+                    "platform": {
+                        "id": 1,
+                        "name": "PC",
+                        "slug": "pc"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 2,
+                        "name": "PlayStation",
+                        "slug": "playstation"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 3,
+                        "name": "Xbox",
+                        "slug": "xbox"
+                    }
+                }
+            ],
+            "genres": [
+                {
+                    "id": 2,
+                    "name": "Shooter",
+                    "slug": "shooter"
+                },
+                {
+                    "id": 4,
+                    "name": "Action",
+                    "slug": "action"
+                }
+            ]
+        },
+        {
+            "slug": "gears-5",
+            "name": "Gears 5",
+            "promo": "e3",
+            "playtime": 5,
+            "platforms": [
+                {
+                    "platform": {
+                        "id": 4,
+                        "name": "PC",
+                        "slug": "pc"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 1,
+                        "name": "Xbox One",
+                        "slug": "xbox-one"
+                    }
+                }
+            ],
+            "stores": [
+                {
+                    "store": {
+                        "id": 1,
+                        "name": "Steam",
+                        "slug": "steam"
+                    }
+                },
+                {
+                    "store": {
+                        "id": 2,
+                        "name": "Xbox Store",
+                        "slug": "xbox-store"
+                    }
+                }
+            ],
+            "released": "2019-09-10",
+            "tba": false,
+            "background_image": "https://media.rawg.io/media/games/121/1213f8b9b0a26307e672cf51f34882f8.jpg",
+            "rating": 4.2,
+            "rating_top": 4,
+            "ratings": [
+                {
+                    "id": 4,
+                    "title": "recommended",
+                    "count": 45,
+                    "percent": 56.96
+                },
+                {
+                    "id": 5,
+                    "title": "exceptional",
+                    "count": 27,
+                    "percent": 34.18
+                },
+                {
+                    "id": 3,
+                    "title": "meh",
+                    "count": 5,
+                    "percent": 6.33
+                },
+                {
+                    "id": 1,
+                    "title": "skip",
+                    "count": 2,
+                    "percent": 2.53
+                }
+            ],
+            "ratings_count": 78,
+            "reviews_text_count": 0,
+            "added": 1054,
+            "added_by_status": {
+                "yet": 27,
+                "owned": 769,
+                "beaten": 26,
+                "toplay": 182,
+                "dropped": 4,
+                "playing": 46
+            },
+            "metacritic": 84,
+            "charts": {
+                "year": {
+                    "year": 2019,
+                    "change": "up",
+                    "position": 9
+                }
+            },
+            "comments_count": 0,
+            "comments_parent_count": 0,
+            "suggestions_count": 632,
+            "id": 326252,
+            "score": "19.517632",
+            "clip": {
+                "clip": "https://media.rawg.io/media/stories-640/dd1/dd193ed84a5113be6c6c4f8fb8206a81.mp4",
+                "clips": {
+                    "320": "https://media.rawg.io/media/stories-320/3f7/3f7860f4670a6ec2f732a74166ba72f0.mp4",
+                    "640": "https://media.rawg.io/media/stories-640/dd1/dd193ed84a5113be6c6c4f8fb8206a81.mp4",
+                    "full": "https://media.rawg.io/media/stories/df0/df090e49abae2f704d9c3aaef169324c.mp4"
+                },
+                "preview": "https://media.rawg.io/media/stories-previews/b7a/b7af3e10a494b7e8352de0defc2b1c6c.jpg"
+            },
+            "user_game": null,
+            "reviews_count": 79,
+            "saturated_color": "0f0f0f",
+            "dominant_color": "0f0f0f",
+            "short_screenshots": [
+                {
+                    "id": -1,
+                    "image": "https://media.rawg.io/media/games/121/1213f8b9b0a26307e672cf51f34882f8.jpg"
+                },
+                {
+                    "id": 1957721,
+                    "image": "https://media.rawg.io/media/screenshots/9f0/9f085738a4ee6bb44b4b26cd3eb9ef93.jpg"
+                },
+                {
+                    "id": 1957722,
+                    "image": "https://media.rawg.io/media/screenshots/1c8/1c8eb3c87b9396e924ade589d543790e.jpg"
+                },
+                {
+                    "id": 1957723,
+                    "image": "https://media.rawg.io/media/screenshots/a83/a832752f82cfde4a811c581e9cd3efd0.jpg"
+                },
+                {
+                    "id": 1957724,
+                    "image": "https://media.rawg.io/media/screenshots/a6f/a6fafe1183ce4b3f68287219ea3dd6c8.jpg"
+                },
+                {
+                    "id": 1957725,
+                    "image": "https://media.rawg.io/media/screenshots/38c/38c4c8601a72e1d0dacf6d1fe1c5dfb3.jpg"
+                },
+                {
+                    "id": 778890,
+                    "image": "https://media.rawg.io/media/screenshots/ae7/ae7fcd1a2d11be26e1ea72e6d5d83ecc.jpg"
+                }
+            ],
+            "parent_platforms": [
+                {
+                    "platform": {
+                        "id": 1,
+                        "name": "PC",
+                        "slug": "pc"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 3,
+                        "name": "Xbox",
+                        "slug": "xbox"
+                    }
+                }
+            ],
+            "genres": [
+                {
+                    "id": 2,
+                    "name": "Shooter",
+                    "slug": "shooter"
+                },
+                {
+                    "id": 4,
+                    "name": "Action",
+                    "slug": "action"
+                }
+            ]
+        },
+        {
+            "slug": "persona-5",
+            "name": "Persona 5",
+            "promo": "",
+            "playtime": 105,
+            "platforms": [
+                {
+                    "platform": {
+                        "id": 18,
+                        "name": "PlayStation 4",
+                        "slug": "playstation4"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 16,
+                        "name": "PlayStation 3",
+                        "slug": "playstation3"
+                    }
+                }
+            ],
+            "stores": [
+                {
+                    "store": {
+                        "id": 3,
+                        "name": "PlayStation Store",
+                        "slug": "playstation-store"
+                    }
+                }
+            ],
+            "released": "2016-09-15",
+            "tba": false,
+            "background_image": "https://media.rawg.io/media/games/0df/0df4c2148306dc53963b3ad957bedc55.jpg",
+            "rating": 4.29,
+            "rating_top": 5,
+            "ratings": [
+                {
+                    "id": 5,
+                    "title": "exceptional",
+                    "count": 384,
+                    "percent": 64.97
+                },
+                {
+                    "id": 4,
+                    "title": "recommended",
+                    "count": 109,
+                    "percent": 18.44
+                },
+                {
+                    "id": 1,
+                    "title": "skip",
+                    "count": 57,
+                    "percent": 9.64
+                },
+                {
+                    "id": 3,
+                    "title": "meh",
+                    "count": 41,
+                    "percent": 6.94
+                }
+            ],
+            "ratings_count": 579,
+            "reviews_text_count": 8,
+            "added": 1754,
+            "added_by_status": {
+                "yet": 89,
+                "owned": 920,
+                "beaten": 324,
+                "toplay": 223,
+                "dropped": 53,
+                "playing": 145
+            },
+            "metacritic": 93,
+            "charts": {
+                "year": {
+                    "year": 2016,
+                    "change": "equal",
+                    "position": 47
+                }
+            },
+            "comments_count": 0,
+            "comments_parent_count": 0,
+            "suggestions_count": 443,
+            "id": 49,
+            "score": "18.555767",
+            "clip": {
+                "clip": "https://media.rawg.io/media/stories-640/365/3659f1204dd37955e4f5197492fe289b.mp4",
+                "clips": {
+                    "320": "https://media.rawg.io/media/stories-320/77e/77ec60bb4571f695a261fecda76ef49f.mp4",
+                    "640": "https://media.rawg.io/media/stories-640/365/3659f1204dd37955e4f5197492fe289b.mp4",
+                    "full": "https://media.rawg.io/media/stories/4c4/4c4a5f670fa35ded20047f334fa973a9.mp4"
+                },
+                "preview": "https://media.rawg.io/media/stories-previews/a2b/a2bf65bd5c35c6dd7e9e9ef755aa812f.jpg"
+            },
+            "user_game": null,
+            "reviews_count": 591,
+            "saturated_color": "0f0f0f",
+            "dominant_color": "0f0f0f",
+            "short_screenshots": [
+                {
+                    "id": -1,
+                    "image": "https://media.rawg.io/media/games/0df/0df4c2148306dc53963b3ad957bedc55.jpg"
+                },
+                {
+                    "id": 314,
+                    "image": "https://media.rawg.io/media/screenshots/d8a/d8a5609a55476906afa237d9890521ea.jpg"
+                },
+                {
+                    "id": 315,
+                    "image": "https://media.rawg.io/media/screenshots/693/693dc8a4fe928593d2830d4357893683.jpg"
+                },
+                {
+                    "id": 316,
+                    "image": "https://media.rawg.io/media/screenshots/6dc/6dc55ac06152af2b7101478f11b2ed3c.jpg"
+                },
+                {
+                    "id": 317,
+                    "image": "https://media.rawg.io/media/screenshots/707/7075e86af0f6a2953452073427f55f6a.jpg"
+                },
+                {
+                    "id": 610188,
+                    "image": "https://media.rawg.io/media/screenshots/aa0/aa005bcc19a0c65b3c10466e4383ae12.jpg"
+                },
+                {
+                    "id": 610189,
+                    "image": "https://media.rawg.io/media/screenshots/bb2/bb284b778955d9383cb9098dbc487971.jpg"
+                }
+            ],
+            "parent_platforms": [
+                {
+                    "platform": {
+                        "id": 2,
+                        "name": "PlayStation",
+                        "slug": "playstation"
+                    }
+                }
+            ],
+            "genres": [
+                {
+                    "id": 3,
+                    "name": "Adventure",
+                    "slug": "adventure"
+                },
+                {
+                    "id": 4,
+                    "name": "Action",
+                    "slug": "action"
+                },
+                {
+                    "id": 5,
+                    "name": "RPG",
+                    "slug": "role-playing-games-rpg"
+                }
+            ]
+        },
+        {
+            "slug": "resident-evil-5-biohazard-5",
+            "name": "Resident Evil 5",
+            "promo": "e3",
+            "playtime": 11,
+            "platforms": [
+                {
+                    "platform": {
+                        "id": 4,
+                        "name": "PC",
+                        "slug": "pc"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 1,
+                        "name": "Xbox One",
+                        "slug": "xbox-one"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 18,
+                        "name": "PlayStation 4",
+                        "slug": "playstation4"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 7,
+                        "name": "Nintendo Switch",
+                        "slug": "nintendo-switch"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 14,
+                        "name": "Xbox 360",
+                        "slug": "xbox360"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 16,
+                        "name": "PlayStation 3",
+                        "slug": "playstation3"
+                    }
+                }
+            ],
+            "stores": [
+                {
+                    "store": {
+                        "id": 1,
+                        "name": "Steam",
+                        "slug": "steam"
+                    }
+                },
+                {
+                    "store": {
+                        "id": 3,
+                        "name": "PlayStation Store",
+                        "slug": "playstation-store"
+                    }
+                },
+                {
+                    "store": {
+                        "id": 2,
+                        "name": "Xbox Store",
+                        "slug": "xbox-store"
+                    }
+                },
+                {
+                    "store": {
+                        "id": 6,
+                        "name": "Nintendo Store",
+                        "slug": "nintendo"
+                    }
+                },
+                {
+                    "store": {
+                        "id": 7,
+                        "name": "Xbox 360 Store",
+                        "slug": "xbox360"
+                    }
+                }
+            ],
+            "released": "2009-03-05",
+            "tba": false,
+            "background_image": "https://media.rawg.io/media/games/974/974342a3959981a17bdbbff2fd7f97b0.jpg",
+            "rating": 3.86,
+            "rating_top": 4,
+            "ratings": [
+                {
+                    "id": 4,
+                    "title": "recommended",
+                    "count": 373,
+                    "percent": 61.05
+                },
+                {
+                    "id": 3,
+                    "title": "meh",
+                    "count": 114,
+                    "percent": 18.66
+                },
+                {
+                    "id": 5,
+                    "title": "exceptional",
+                    "count": 100,
+                    "percent": 16.37
+                },
+                {
+                    "id": 1,
+                    "title": "skip",
+                    "count": 24,
+                    "percent": 3.93
+                }
+            ],
+            "ratings_count": 610,
+            "reviews_text_count": 0,
+            "added": 3052,
+            "added_by_status": {
+                "yet": 83,
+                "owned": 2245,
+                "beaten": 594,
+                "toplay": 34,
+                "dropped": 87,
+                "playing": 9
+            },
+            "metacritic": 86,
+            "charts": {
+                "year": {
+                    "year": 2009,
+                    "change": "equal",
+                    "position": 6
+                }
+            },
+            "comments_count": 0,
+            "comments_parent_count": 0,
+            "suggestions_count": 628,
+            "id": 13461,
+            "score": "18.46381",
+            "clip": {
+                "clip": "https://media.rawg.io/media/stories-640/fa2/fa29a9ee51e74bbdc16c2e5b6e3488c8.mp4",
+                "clips": {
+                    "320": "https://media.rawg.io/media/stories-320/b24/b240c0bc87c74aeb4d8efbb01c0fc9e3.mp4",
+                    "640": "https://media.rawg.io/media/stories-640/fa2/fa29a9ee51e74bbdc16c2e5b6e3488c8.mp4",
+                    "full": "https://media.rawg.io/media/stories/de9/de9d7108bd282539e22d84ad850d1421.mp4"
+                },
+                "preview": "https://media.rawg.io/media/stories-previews/afb/afbf7a2b557f229013fd0046a7b64a45.jpg"
+            },
+            "user_game": null,
+            "reviews_count": 611,
+            "saturated_color": "0f0f0f",
+            "dominant_color": "0f0f0f",
+            "short_screenshots": [
+                {
+                    "id": -1,
+                    "image": "https://media.rawg.io/media/games/974/974342a3959981a17bdbbff2fd7f97b0.jpg"
+                },
+                {
+                    "id": 114968,
+                    "image": "https://media.rawg.io/media/screenshots/4ad/4adb836eae33db45da2cb9bd919becc4.jpg"
+                },
+                {
+                    "id": 114969,
+                    "image": "https://media.rawg.io/media/screenshots/673/673c00d710a685e727a6a8b97f1d6c3b.jpg"
+                },
+                {
+                    "id": 114970,
+                    "image": "https://media.rawg.io/media/screenshots/998/998d87968d7f9a9b9fda30d988b9377b.jpg"
+                },
+                {
+                    "id": 114971,
+                    "image": "https://media.rawg.io/media/screenshots/992/9926a0cce6aaecd786651932c4d45251.jpg"
+                },
+                {
+                    "id": 114972,
+                    "image": "https://media.rawg.io/media/screenshots/443/443208c142882f657df637f6b6b2fcb9.jpg"
+                },
+                {
+                    "id": 114973,
+                    "image": "https://media.rawg.io/media/screenshots/c9f/c9f66daefb307430670ed514bb5c01c3.jpg"
+                }
+            ],
+            "parent_platforms": [
+                {
+                    "platform": {
+                        "id": 1,
+                        "name": "PC",
+                        "slug": "pc"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 2,
+                        "name": "PlayStation",
+                        "slug": "playstation"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 3,
+                        "name": "Xbox",
+                        "slug": "xbox"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 7,
+                        "name": "Nintendo",
+                        "slug": "nintendo"
+                    }
+                }
+            ],
+            "genres": [
+                {
+                    "id": 2,
+                    "name": "Shooter",
+                    "slug": "shooter"
+                },
+                {
+                    "id": 4,
+                    "name": "Action",
+                    "slug": "action"
+                }
+            ]
+        },
+        {
+            "slug": "geneforge-5-overthrow",
+            "name": "Geneforge 5: Overthrow",
+            "promo": "",
+            "playtime": 1,
+            "platforms": [
+                {
+                    "platform": {
+                        "id": 4,
+                        "name": "PC",
+                        "slug": "pc"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 5,
+                        "name": "macOS",
+                        "slug": "macos"
+                    }
+                }
+            ],
+            "stores": [
+                {
+                    "store": {
+                        "id": 1,
+                        "name": "Steam",
+                        "slug": "steam"
+                    }
+                }
+            ],
+            "released": "2008-11-28",
+            "tba": false,
+            "background_image": "https://media.rawg.io/media/screenshots/d18/d18683e862aa53d7a9f853ecd97876b4.jpg",
+            "rating": 3.0,
+            "rating_top": 4,
+            "ratings": [
+                {
+                    "id": 4,
+                    "title": "recommended",
+                    "count": 2,
+                    "percent": 28.57
+                },
+                {
+                    "id": 3,
+                    "title": "meh",
+                    "count": 2,
+                    "percent": 28.57
+                },
+                {
+                    "id": 1,
+                    "title": "skip",
+                    "count": 2,
+                    "percent": 28.57
+                },
+                {
+                    "id": 5,
+                    "title": "exceptional",
+                    "count": 1,
+                    "percent": 14.29
+                }
+            ],
+            "ratings_count": 7,
+            "reviews_text_count": 0,
+            "added": 256,
+            "added_by_status": {
+                "yet": 8,
+                "owned": 244,
+                "beaten": 2,
+                "dropped": 1,
+                "playing": 1
+            },
+            "metacritic": null,
+            "charts": {
+                "year": {
+                    "year": 2008,
+                    "change": "equal",
+                    "position": 116
+                }
+            },
+            "comments_count": 0,
+            "comments_parent_count": 0,
+            "suggestions_count": 257,
+            "id": 21264,
+            "score": "17.65599",
+            "clip": null,
+            "user_game": null,
+            "reviews_count": 7,
+            "saturated_color": "0f0f0f",
+            "dominant_color": "0f0f0f",
+            "short_screenshots": [
+                {
+                    "id": -1,
+                    "image": "https://media.rawg.io/media/screenshots/d18/d18683e862aa53d7a9f853ecd97876b4.jpg"
+                },
+                {
+                    "id": 202430,
+                    "image": "https://media.rawg.io/media/screenshots/4ec/4ecd3470d6fbefbfabe7eeb0399d00f6.jpg"
+                },
+                {
+                    "id": 202431,
+                    "image": "https://media.rawg.io/media/screenshots/b42/b42d16c11742bf12ff47425aa6b31cb6.jpg"
+                },
+                {
+                    "id": 202432,
+                    "image": "https://media.rawg.io/media/screenshots/842/84295da80dc80f50de248b8914bd4d29.jpg"
+                },
+                {
+                    "id": 202433,
+                    "image": "https://media.rawg.io/media/screenshots/016/016e29cf45770505a767c0cf9a1a450d.jpg"
+                },
+                {
+                    "id": 202434,
+                    "image": "https://media.rawg.io/media/screenshots/df3/df328fb6327b432f21e20a7f61faf482.jpg"
+                },
+                {
+                    "id": 202435,
+                    "image": "https://media.rawg.io/media/screenshots/d18/d18683e862aa53d7a9f853ecd97876b4.jpg"
+                }
+            ],
+            "parent_platforms": [
+                {
+                    "platform": {
+                        "id": 1,
+                        "name": "PC",
+                        "slug": "pc"
+                    }
+                },
+                {
+                    "platform": {
+                        "id": 5,
+                        "name": "Apple Macintosh",
+                        "slug": "mac"
+                    }
+                }
+            ],
+            "genres": [
+                {
+                    "id": 10,
+                    "name": "Strategy",
+                    "slug": "strategy"
+                },
+                {
+                    "id": 51,
+                    "name": "Indie",
+                    "slug": "indie"
+                },
+                {
+                    "id": 5,
+                    "name": "RPG",
+                    "slug": "role-playing-games-rpg"
+                }
+            ]
+        }
+    ]
+}

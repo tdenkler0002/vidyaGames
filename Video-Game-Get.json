@@ -1,0 +1,31 @@
+{
+    [
+        {
+            "title": "Super Mario Bros 3",
+            "platform": "Nintendo",
+            "dateAdded": "01-01-2001 00:00:00.000",
+            "id": "1234",
+            "platformApplication": null,
+            "released": "01-01-1972 00:00:00.000",
+            "imagePath": "http://fakeimg.com",
+            "rating": 4.5,
+            "genres": [
+                "PLATFORM",
+                "FAMILY"
+            ]
+        },
+        {
+            "title": "Super Smash Brothers",
+            "platform": "Nintendo Switch",
+            "dateAdded": "05-01-2019 00:00:00.000",
+            "id": "2468",
+            "platformApplication": null,
+            "released": "01-01-2019 00:00:00.000",
+            "imagePath": "http://fakeimg2.com",
+            "rating": 3.0,
+            "genres": [
+                "FIGHTING",
+                "FAMILY"
+            ]
+    ]
+}

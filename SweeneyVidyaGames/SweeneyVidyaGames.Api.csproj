@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'SweeneyVidyaGames' ">
+    <StartAction>Project</StartAction>
+    <LaunchUrl>weatherforecast</LaunchUrl>
+    <ApplicationURL>https://localhost:5001;http://localhost:5000</ApplicationURL>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'SweeneyVidyaGames.Web' ">
+    <StartAction>Project</StartAction>
+    <ApplicationURL>https://localhost:5001;http://localhost:5000</ApplicationURL>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Domain\Services\" />
+    <Folder Include="Domain\Repositories\" />
+    <Folder Include="Persistence\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Domain\Services\Communication\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Domain\VideoGame.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc3" />
+  </ItemGroup>
+</Project>
