@@ -6,7 +6,7 @@
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'SweeneyVidyaGames' ">
     <StartAction>Project</StartAction>
-    <LaunchUrl>weatherforecast</LaunchUrl>
+    <LaunchUrl>api/videogames</LaunchUrl>
     <ApplicationURL>https://localhost:5001;http://localhost:5000</ApplicationURL>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'SweeneyVidyaGames.Web' ">

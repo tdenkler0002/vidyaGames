@@ -1,7 +1,7 @@
 ﻿using System;
 namespace SweeneyVidyaGames.Api.Infrastructure
 {
-    public enum CacheKeys
+    public enum CacheKeys : Byte
     {
         VideoGameList
     }
