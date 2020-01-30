@@ -12,6 +12,7 @@ using SweeneyVidyaGames.Api.Domain.Repositories;
 using SweeneyVidyaGames.Api.Interfaces;
 using SweeneyVidyaGames.Api.Persistence.Contexts;
 using SweeneyVidyaGames.Api.Persistence.Repositories;
+using SweeneyVidyaGames.Api.Resources;
 
 namespace SweeneyVidyaGames
 {
@@ -26,6 +27,8 @@ namespace SweeneyVidyaGames
 
         public void ConfigureServices(IServiceCollection services)
         {
+            var connectionString = new ConnectionString(Configuration.GetConnectionString("DefaultConnection"));
+
             services.AddMvc(option =>
             {
                 option.EnableEndpointRouting = false;
@@ -33,17 +36,18 @@ namespace SweeneyVidyaGames
 
             services.AddDbContext<AppDbContext>(options =>
             {
-                options.UseInMemoryDatabase("videogames-api-in-memory");
+                options.UseSqlServer(connectionString.Value);
             });
 
             services.AddMemoryCache();
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
                     Title = "Vidya Games",
                     Version = "v1",
-                    Contact = new OpenApiContact { Name = "Tiffany Sweeney", Email = "tiffany.denkler@yahoo.com"}
+                    Contact = new OpenApiContact { Name = "Tiffany Sweeney", Email = "tiffany.denkler@yahoo.com" }
                 });
             });
 

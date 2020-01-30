@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UserSecretsId>4c8f97ce-294c-4489-a878-281434b494b4</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'SweeneyVidyaGames' ">
@@ -28,10 +29,10 @@
     <Folder Include="Domain\Models\" />
     <Folder Include="Controllers\Config\" />
     <Folder Include="Infrastructure\" />
+    <Folder Include="Persistence\Contexts\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Domain\VideoGame.cs" />
-    <Compile Remove="Controllers\WeatherForecastController.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
@@ -39,6 +40,6 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
   </ItemGroup>
 </Project>
