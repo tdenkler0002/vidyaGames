@@ -36,6 +36,15 @@ namespace SweeneyVidyaGames.Api.Core.Services
             return videoGames;
         }
 
+        public async Task<VideoGameResponse> FindByIdAsync(int id)
+        {
+            var videoGame = await _videoGameRepository.FindByIdAsync(id);
+
+            return videoGame == null ?
+                new VideoGameResponse("Video Game not found.") :
+                new VideoGameResponse(videoGame);
+        }
+
         public async Task<VideoGameResponse> SaveAsync(VideoGameDTO videoGame)
         {
             try

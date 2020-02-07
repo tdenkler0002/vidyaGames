@@ -39,6 +39,25 @@ namespace SweeneyVidyaGames.Web.Controllers
             return resources;
         }
 
+        ///// <summary>
+        ///// Gets a video game by Id
+        ///// </summary>
+        ///// <returns>VideoGameResource</returns>
+        [HttpGet("{id}")]
+        [ProducesResponseType(typeof(VideoGameResource), 200)]
+        [ProducesResponseType(typeof(ErrorResource), 404)]
+        public async Task<IActionResult> Get(int id)
+        {
+            var result = await _videoGameService.FindByIdAsync(id);
+
+            if (result.Resource == null)
+                return NotFound(new ErrorResource(result.Message));
+
+            var videoGameResource = _mapper.Map<VideoGameDTO, VideoGameResource>(result.Resource);
+
+            return Ok(videoGameResource);
+        }
+
         /// <summary>
         /// Creates a new video game
         /// </summary>

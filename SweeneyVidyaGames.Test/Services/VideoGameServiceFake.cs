@@ -34,6 +34,11 @@ namespace SweeneyVidyaGames.Test.Services
             throw new NotImplementedException();
         }
 
+        public Task<VideoGameResponse> FindByIdAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<IEnumerable<VideoGameDTO>> ListAsync()
         {
             return Task.FromResult(_videoGames);

@@ -8,6 +8,7 @@ namespace SweeneyVidyaGames.Api.Interfaces
     public interface IVideoGameService
     {
         Task<IEnumerable<VideoGameDTO>> ListAsync();
+        Task<VideoGameResponse> FindByIdAsync(int id);
         Task<VideoGameResponse> SaveAsync(VideoGameDTO videoGame);
         Task<VideoGameResponse> UpdateAsync(int id, VideoGameDTO videoGame);
         Task<VideoGameResponse> DeleteAsync(int id);
